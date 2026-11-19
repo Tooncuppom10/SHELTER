@@ -1,0 +1,15 @@
+{
+  "name": "shel714-regression",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Regression test SHEL-714 รายงานข้อมูลศูนย์พักพิงเบื้องต้น (Shelter MA UAT)",
+  "scripts": {
+    "test": "playwright test",
+    "test:safe": "playwright test tests/cases/01-access.spec.js tests/cases/02-validation.spec.js",
+    "report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.49.0"
+  }
+}
